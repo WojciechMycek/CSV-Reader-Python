@@ -13,4 +13,4 @@ class MaintainCsvFile():
             print(item)
 
 
-MaintainCsvFile.read_from_csv("Notatnik")
+MaintainCsvFile.read_from_csv("Notatnik.csv")
