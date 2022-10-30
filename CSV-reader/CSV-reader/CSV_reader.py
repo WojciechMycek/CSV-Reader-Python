@@ -1,16 +1,5 @@
-from asyncio.windows_events import NULL
-import csv
+from Maintain_csv_file import *
 
-class MaintainCsvFile():
-   
-    classmethod
-    def read_from_csv(csv_file_name):
-        with open(csv_file_name,'r') as r:
-            reader = csv.DictReader(r)
-            items = list(reader)
+#user_file_choose = input("Hi! Please fill field with your name's file.csv")
 
-        for item in items:
-            print(item)
-
-
-MaintainCsvFile.read_from_csv("Notatnik.csv")
+MaintainCsvFile.read_from_csv(input(" Define csv name: "))
